@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111111">
+  <title>Paralaje | Experiencia sonora</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@ar-js-org/ar.js@3.4.7/aframe/build/aframe-ar.min.js"></script>
+</head>
+<body>
+  <a-scene
+    embedded
+    vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false"
+    renderer="antialias: true; alpha: true"
+    arjs="sourceType: webcam; debugUIEnabled: false; trackingMethod: best;"
+  >
+    <a-camera position="0 0 0" look-controls="enabled: false">
+      <a-entity position="0 0 -2.4" animation="property: rotation; to: 0 360 0; loop: true; dur: 18000; easing: linear">
+        <a-torus color="#f4efe4" radius="0.42" radius-tubular="0.008" opacity="0.7"></a-torus>
+        <a-torus color="#f4efe4" radius="0.31" radius-tubular="0.004" opacity="0.4" rotation="70 0 0"></a-torus>
+      </a-entity>
+    </a-camera>
+  </a-scene>
+
+  <main class="interface">
+    <header class="title-block">
+      <p class="eyebrow">Paralaje</p>
+      <h1>Testimonio de resistencia y permanencia</h1>
+    </header>
+
+    <section class="player" aria-label="Reproductor de la obra">
+      <p id="status" class="status" role="status">Activa el sonido para escuchar la semblanza.</p>
+
+      <div class="controls">
+        <button id="playButton" class="primary" type="button" aria-pressed="false">
+          <span id="playIcon" aria-hidden="true">▶</span>
+          <span id="playLabel">Escuchar</span>
+        </button>
+        <button id="restartButton" class="icon-button" type="button" title="Reiniciar" aria-label="Reiniciar audio">↺</button>
+      </div>
+
+      <label class="volume" for="musicVolume">
+        <span>Música</span>
+        <input id="musicVolume" type="range" min="0" max="1" value="0.22" step="0.01">
+      </label>
+
+      <audio id="narration" preload="metadata" src="assets/semblanza.mp3"></audio>
+      <audio id="music" preload="metadata" src="assets/musica.mp3" loop></audio>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+Webcam Error Name: Message: WebRTC issue-~ navigator.mediaDevices not present in your browser
