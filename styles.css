@@ -8,7 +8,7 @@ body {
   color: #ffffff;
 }
 
-.bodyIndex {
+body.bodyIndex {
   width: 100%;
   margin: 0;
   #overflow: hidden;
