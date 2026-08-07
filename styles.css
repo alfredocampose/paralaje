@@ -14,7 +14,7 @@ body.bodyIndex {
 
 
 h1 {
-  #max-width: 80%;
+  max-width: 80%;
   font-family: Arial, "Times New Roman", serif;
   font-size: clamp(1.85rem, 8vw, 3.5rem);
   font-weight: 600;
@@ -22,6 +22,7 @@ h1 {
 }
 
 h2 {
+  max-width: 90%;
   font-family: Arial, Helvetica, serif;
   font-size: clamp(1.85rem, 8vw, 2.5rem);
   font-weight: 500;
@@ -30,4 +31,13 @@ h2 {
 
 a:link, a:visited {
   color: #EEEEEE;
+  font-family: Helvetica, Helvetica, serif;
+  font-size: clamp(1.85rem, 8vw, 2.0rem);
+}
+a:hover {
+  color: red;
+}
+
+a.other {
+	font-size: 15px;
 }
