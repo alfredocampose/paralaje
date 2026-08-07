@@ -14,18 +14,17 @@ body.bodyIndex {
 
 
 h1 {
-  max-width: 80%;
+  #max-width: 80%;
   font-family: Arial, "Times New Roman", serif;
   #font-size: clamp(1.65rem, 7vw, 2.5rem);
-  font-weight: 600;
-  line-height: 1.05;
+  #font-weight: 600;
+  #line-height: 1.05;
 }
 
 h2 {
-  font-weight: 800; 
   font-family: Arial, Helvetica, serif;
-  font-weight: 400;
-  line-height: 1.05;
+  #font-weight: 400;
+  #line-height: 1.05;
 }
 
 a:link, a:visited {
