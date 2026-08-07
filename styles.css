@@ -8,6 +8,15 @@ body {
   color: #ffffff;
 }
 
+.bodyIndex {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+
 h1 {
   max-width: 360px;
   margin: 0;
