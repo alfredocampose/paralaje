@@ -37,9 +37,6 @@ h4 {
   font-family: Arial, Helvetica, serif;"
 }
 
-
-@media (prefers-reduced-motion: reduce) {
-  a-scene {
-    display: none;
-  }
+a:link, a:visited {
+  color: #333333; /* Use your desired hex, rgb, or color name */
 }
